@@ -21,6 +21,10 @@ Folder: `/SAAS LANDING PAGE`
 - **Email**: Nodemailer + Gmail App Password
 - **Security**: bcrypt for password hashing, dotenv for .env
 
+### Environment Variables (.env)
+
+Create a `.env` file in `/SAAS LANDING PAGE/backend` using the `.env.eg` provided.
+
 ### Project Structure – ResumAI
 
 ├── backend
@@ -53,6 +57,10 @@ Folder: `/FAQ-CHATBOT`
 - **Backend**: Node.js, Express.js
 - **AI/NLP**: OpenAI API or logic-based fallback
 - **Storage**: MongoDB or `.txt` logging
+
+### 🔐 Environment Variables (.env)
+
+Create a `.env` file in `/SAAS LANDING PAGE/backend` using the `.env.example` provided.
 
 ### Project Structure – FAQ Chatbot
 
