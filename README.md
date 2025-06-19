@@ -1,6 +1,6 @@
 # web-projects
 
-This repository contains two full-stack web development projects built during my internship. These projects demonstrate skills in frontend design, backend development, database integration, and AI-powered user interaction.
+This repository contains two web development internship projects:
 
 ## 1. ResumAI – SaaS-Style Landing Page with Email Verification
 
