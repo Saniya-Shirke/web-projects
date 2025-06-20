@@ -43,7 +43,7 @@ app.post('/signup', async (req, res) => {
     const user = new User({ name, email, password, token, verified: false });
     await user.save();
 
-    const link = `http://localhost:5000/verify/${token}`; // ✅ fixed slash
+    const link = `http://localhost:5000/verify/${token}`; 
 
     await transporter.sendMail({
       from: process.env.EMAIL,
