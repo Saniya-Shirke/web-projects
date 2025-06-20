@@ -69,7 +69,7 @@ faq-chatbot/
 │ ├── index.js
 │ ├── feedback_log.txt
 │ ├── unanswered_questions.txt
-│ ├── .env.example
+│ ├── .env.examples
 │ └── package.json
 ├── frontend/
 │ ├── App.js
