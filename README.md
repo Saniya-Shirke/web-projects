@@ -1,78 +1,78 @@
 # web-projects
 
-This repository contains two web development internship projects:
+This repository contains two web development projects built for internship submission:
 
 ## 1. ResumAI – SaaS-Style Landing Page with Email Verification
 
-Folder: `/SAAS LANDING PAGE`
+Folder: `saas-landing-page`
 
 ### Features:
-- Conversion-optimized landing page using Tailwind CSS
-- Sign-up form with validation
-- Email verification via Nodemailer (Gmail)
-- Data stored in MongoDB
-- Thank-you page shown after verification
-- Passwords can be secured using bcrypt (optional)
+- Eye-catching landing page using Tailwind CSS
+- Sign-up form with client-side validation
+- Email verification using Nodemailer (Gmail App Password)
+- Data stored securely in MongoDB
+- Thank-you page shown after successful verification
+- Optional: Passwords can be hashed using bcrypt
 
-### Tech Stack:
+### Tools Used:
 - **Frontend**: HTML, Tailwind CSS, JavaScript
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB with Mongoose
 - **Email**: Nodemailer + Gmail App Password
-- **Security**: bcrypt for password hashing, dotenv for .env
+- **Security**: bcrypt (optional), dotenv for managing secrets
 
-### Environment Variables (.env)
+### Environment Variables
 
-Create a `.env` file in `/SAAS LANDING PAGE/backend` using the `.env.eg` provided.
+Create a `.env` file inside `/saas-landing-page/backend/` based on the `.env.example` provided.
 
 ### Project Structure – ResumAI
 
-├── backend
-│ ├── models
+saas-landing-page/
+├── backend/
+│ ├── models/
 │ │ └── User.js
-│ ├── public
+│ ├── public/
 │ │ └── thankyou.html
-│ ├── .env
-│ ├── server.js 
+│ ├── .env.example
+│ ├── server.js
 │ └── package.json
-├── index.html (Landing Page)
+└── frontend/
+└── index.html
 
-
-
----
 
 ## 2. FAQ Chatbot – AI-Powered Question Answering System
 
-Folder: `/FAQ-CHATBOT`
+Folder: `faq-chatbot`
 
 ### Features:
-- React-based chatbot interface
-- Express backend with Node.js
-- Answers predefined FAQs using OpenAI or fallback keyword matching
-- Stores feedback and unanswered questions in `.txt` files
-- Uses `.env` for safe API key storage
+- Interactive chatbot interface built with React
+- Express backend for message handling
+- Answers predefined FAQs using OpenAI API or fallback logic
+- Feedback and unanswered questions stored in `.txt` logs
+- Frontend and backend fully separated
+- Uses `.env` for secure API keys
 
-### Tech Stack:
+### Tools Used:
 - **Frontend**: React.js, Tailwind CSS
 - **Backend**: Node.js, Express.js
-- **AI/NLP**: OpenAI API or logic-based fallback
-- **Storage**: MongoDB or `.txt` logging
+- **AI/NLP**: OpenAI API or rule-based fallback
+- **Storage**: Text logs or optional MongoDB
 
-### 🔐 Environment Variables (.env)
+### Environment Variables
 
-Create a `.env` file in `/SAAS LANDING PAGE/backend` using the `.env.example` provided.
+Create a `.env` file inside `/faq-chatbot/backend/` based on the `.env.examples` provided.
 
 ### Project Structure – FAQ Chatbot
 
-/FAQ-CHATBOT
-├── backend
+faq-chatbot/
+├── backend/
 │ ├── index.js
 │ ├── feedback_log.txt
 │ ├── unanswered_questions.txt
-│ ├── .env
+│ ├── .env.example
 │ └── package.json
-├── frontend
-│ ├── src
-│ │ ├── App.js
-│ │ └── Chatbot.jsx
-│ └── public
+├── frontend/
+│ ├── App.js
+│ ├── Chatbot.jsx
+│ └── index.js
+└── chatbot-report.pdf
